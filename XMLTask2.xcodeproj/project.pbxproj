@@ -16,6 +16,10 @@
 		42930DC41D62F3510036D42D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42930DC21D62F3510036D42D /* LaunchScreen.storyboard */; };
 		42930DCF1D62F3520036D42D /* XMLTask2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42930DCE1D62F3520036D42D /* XMLTask2Tests.m */; };
 		42930DDA1D62F3520036D42D /* XMLTask2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42930DD91D62F3520036D42D /* XMLTask2UITests.m */; };
+		42930DEB1D62F92C0036D42D /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = 42930DEA1D62F92C0036D42D /* Details.m */; };
+		42930DF01D6315830036D42D /* xmlTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 42930DEF1D6315830036D42D /* xmlTableDataSource.m */; };
+		42930DF41D6316940036D42D /* xmlDataPurser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42930DF31D6316940036D42D /* xmlDataPurser.m */; };
+		42930DF81D632BEE0036D42D /* webViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42930DF71D632BEE0036D42D /* webViewContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		42930DD51D62F3520036D42D /* XMLTask2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMLTask2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42930DD91D62F3520036D42D /* XMLTask2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLTask2UITests.m; sourceTree = "<group>"; };
 		42930DDB1D62F3520036D42D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42930DE91D62F92C0036D42D /* Details.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Details.h; sourceTree = "<group>"; };
+		42930DEA1D62F92C0036D42D /* Details.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Details.m; sourceTree = "<group>"; };
+		42930DEE1D6315830036D42D /* xmlTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlTableDataSource.h; sourceTree = "<group>"; };
+		42930DEF1D6315830036D42D /* xmlTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmlTableDataSource.m; sourceTree = "<group>"; };
+		42930DF21D6316940036D42D /* xmlDataPurser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlDataPurser.h; sourceTree = "<group>"; };
+		42930DF31D6316940036D42D /* xmlDataPurser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmlDataPurser.m; sourceTree = "<group>"; };
+		42930DF61D632BEE0036D42D /* webViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewContainer.h; sourceTree = "<group>"; };
+		42930DF71D632BEE0036D42D /* webViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +115,12 @@
 		42930DB01D62F3510036D42D /* XMLTask2 */ = {
 			isa = PBXGroup;
 			children = (
+				42930DF51D632BD30036D42D /* WebView */,
+				42930DF11D6316750036D42D /* XMLDataParser */,
+				42930DEC1D6314C50036D42D /* Models */,
+				42930DE71D62F39E0036D42D /* TableView */,
 				42930DB41D62F3510036D42D /* AppDelegate.h */,
 				42930DB51D62F3510036D42D /* AppDelegate.m */,
-				42930DB71D62F3510036D42D /* ViewController.h */,
-				42930DB81D62F3510036D42D /* ViewController.m */,
 				42930DBA1D62F3510036D42D /* Main.storyboard */,
 				42930DC01D62F3510036D42D /* Assets.xcassets */,
 				42930DC21D62F3510036D42D /* LaunchScreen.storyboard */,
@@ -141,6 +155,52 @@
 				42930DDB1D62F3520036D42D /* Info.plist */,
 			);
 			path = XMLTask2UITests;
+			sourceTree = "<group>";
+		};
+		42930DE71D62F39E0036D42D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				42930DE81D62F90D0036D42D /* Details */,
+				42930DB71D62F3510036D42D /* ViewController.h */,
+				42930DB81D62F3510036D42D /* ViewController.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		42930DE81D62F90D0036D42D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				42930DE91D62F92C0036D42D /* Details.h */,
+				42930DEA1D62F92C0036D42D /* Details.m */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		42930DEC1D6314C50036D42D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42930DEE1D6315830036D42D /* xmlTableDataSource.h */,
+				42930DEF1D6315830036D42D /* xmlTableDataSource.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		42930DF11D6316750036D42D /* XMLDataParser */ = {
+			isa = PBXGroup;
+			children = (
+				42930DF21D6316940036D42D /* xmlDataPurser.h */,
+				42930DF31D6316940036D42D /* xmlDataPurser.m */,
+			);
+			name = XMLDataParser;
+			sourceTree = "<group>";
+		};
+		42930DF51D632BD30036D42D /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				42930DF61D632BEE0036D42D /* webViewContainer.h */,
+				42930DF71D632BEE0036D42D /* webViewContainer.m */,
+			);
+			name = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				42930DB91D62F3510036D42D /* ViewController.m in Sources */,
+				42930DF81D632BEE0036D42D /* webViewContainer.m in Sources */,
 				42930DB61D62F3510036D42D /* AppDelegate.m in Sources */,
+				42930DF41D6316940036D42D /* xmlDataPurser.m in Sources */,
+				42930DEB1D62F92C0036D42D /* Details.m in Sources */,
+				42930DF01D6315830036D42D /* xmlTableDataSource.m in Sources */,
 				42930DB31D62F3510036D42D /* main.m in Sources */,
 				42930DBF1D62F3510036D42D /* XMLTask2.xcdatamodeld in Sources */,
 			);

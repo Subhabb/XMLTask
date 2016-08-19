@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Details.h
 //  XMLTask2
 //
 //  Created by Subhabrata Banerjee on 16/08/16.
@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Details : UITableViewCell
 
-@property IBOutlet UITableView *xmlData;
-@property NSArray *dates;
-@property NSArray *titles;
+@property IBOutlet UILabel *title;
+@property IBOutlet UILabel *date;
+@property IBOutlet UIImageView *defaultImage;
 
 @end
-
